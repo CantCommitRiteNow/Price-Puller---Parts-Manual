@@ -39,6 +39,8 @@ E46 M3|https://www.fcpeuro.com/products/bmw-oxygen-sensor-rear-upper-m3-z3-bosch
 E46 M3|https://www.fcpeuro.com/products/bmw-oxygen-sensor-front-lower-m3-z3-z4-bosch-15138
 E46 M3|https://www.fcpeuro.com/products/bmw-oxygen-sensor-rear-lower-m3-z3-z4-bosch-13951
 E46 M3|https://www.fcpeuro.com/products/bmw-egt-sensor-oem-supplier-11787831624
+E46 M3|https://www.fcpeuro.com/products/bmw-alternator-z3-m3-al9407x
+E46 M3|https://www.fcpeuro.com/products/bmw-voltage-regulator-12317551153-1
 E92 M3|https://www.fcpeuro.com/products/bmw-brake-kit-front-and-rear-e9xm3brakekit2
 E92 M3|https://www.fcpeuro.com/products/bmw-10-piece-control-arm-kit-rear-1m-m3-e9xm310piecerearoe
 E92 M3|https://www.fcpeuro.com/products/bmw-bushing-kit-rear-m-spec-33326763092kit
