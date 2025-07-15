@@ -20,7 +20,7 @@ jobs:
 
       - name: Install dependencies (if any)
         run: |
-          pip install -r requirements.txt || echo "No requirements.txt found."
+          pip install -r requirements.txt
 
       - name: Run Parts_Puller_Parts.pyy script
         run: python "Parts_Puller_Parts.py"
