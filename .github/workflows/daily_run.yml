@@ -1,4 +1,4 @@
-name: Daily Run - Price Puller
+name: Daily Run - Price Puller Parts
 
 on:
   schedule:
