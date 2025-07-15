@@ -12,28 +12,28 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v3
+        with:
+          persist-credentials: false  # Needed for PAT push
 
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
-          python-version: '3.11'  # Adjust as needed
+          python-version: '3.11'
 
-      - name: Install dependencies (if any)
+      - name: Install dependencies
         run: |
           pip install -r requirements.txt
 
-      - name: Run Parts_Puller_Parts.pyy script
+      - name: Run Parts_Puller_Parts.py script
         run: python "Parts_Puller_Parts.py"
 
-      - name: Configure Git for commit
-        run: |
-          git config --global user.name "github-actions[bot]"
-          git config --global user.email "github-actions[bot]@users.noreply.github.com"
-
-      - name: Commit and push updated Excel file
+      - name: Configure Git and push changes
         env:
           TOKEN: ${{ secrets.PAT }}
         run: |
-          git add euro_parts_database.xlsx
-          git commit -m "Update Excel file from daily run" || echo "No changes to commit"
-          git push
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git remote set-url origin https://x-access-token:${TOKEN}@github.com/${{ github.repository }}
+          git add euro_parts_database.xlsx price_puller.log
+          git commit -m "Update Excel file and log from daily run" || echo "No changes to commit"
+          git push origin HEAD:${{ github.ref_name }}
