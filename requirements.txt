@@ -2,3 +2,5 @@ requests
 openpyxl
 urllib3
 lxml
+pytz
+os
