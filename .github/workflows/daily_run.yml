@@ -22,8 +22,8 @@ jobs:
         run: |
           pip install -r requirements.txt || echo "No requirements.txt found."
 
-      - name: Run Price-Puller---Parts.py script
-        run: python "Price-Puller---Parts.py"
+      - name: Run Parts-Puller---Parts.py script
+        run: python "Parts-Puller---Parts.py"
 
       - name: Configure Git for commit
         run: |
